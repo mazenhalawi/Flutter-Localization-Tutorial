@@ -16,7 +16,7 @@ This is a Flutter localization tutorial for my Flutter students. There are 7 Ste
 
 
 
-// Step 2: Add supported locales to Material App
+# Step 2: Add supported locales to Material App
       supportedLocales: [
         Locale('en', ''),
         Locale('ar', ''),
@@ -24,7 +24,7 @@ This is a Flutter localization tutorial for my Flutter students. There are 7 Ste
 
 
 
-// Step 3: Add callback function to return supportedLocale or defaults to english if failed
+# Step 3: Add callback function to return supportedLocale or defaults to english if failed
       localeResolutionCallback: (locale, supportedLocales) {
         for (Locale supportedLocale in supportedLocales) {
           if (supportedLocale.languageCode == locale.languageCode) {
@@ -36,7 +36,7 @@ This is a Flutter localization tutorial for my Flutter students. There are 7 Ste
 
 
 
-// Step 4: Add localization delegates
+# Step 4: Add localization delegates
       localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
@@ -45,7 +45,7 @@ This is a Flutter localization tutorial for my Flutter students. There are 7 Ste
 
 
 
-// Step 5: Create AppLocalizations to handle custom localization in the app
+# Step 5: Create AppLocalizations to handle custom localization in the app
 class AppLocalizations {
   // Step A: Add locale property for the class
   final Locale locale;
@@ -81,7 +81,7 @@ class AppLocalizations {
 
 
 
-// Step 6: Create the LocalizationsDelegate which will present the delegate used in MaterialApp AppLocalizations.Delegate
+# Step 6: Create the LocalizationsDelegate which will present the delegate used in MaterialApp AppLocalizations.Delegate
 class _AppLocalizations extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizations();
 
